@@ -99,7 +99,7 @@ local sound_door = love.audio.newSource("assets/music/door.wav", "static")
 sound_door:setVolume(0.7)
 local sound_pickup = love.audio.newSource("assets/music/pickup.wav", "static")
 sound_pickup:setVolume(0.7)
-local bgm = love.audio.newSource("assets/music/menu_bgm.ogg", "stream")
+local bgm = love.audio.newSource("assets/music/menu_bgm.mp3", "stream")
 local upper_bgm = love.audio.newSource("assets/music/Red_Curtain.mp3", "stream")
 upper_bgm:setVolume(0.3)
 local ending_bgm = love.audio.newSource("assets/music/happy_bgm.mp3", "stream")
@@ -546,9 +546,9 @@ local function sensors()
             end
 
             --toggle fullscreen
-            if item.toggle_fulscreen then
+         --[[    if item.toggle_fulscreen then
                 toggle_screen()
-            end
+            end ]]
 
             --sound control
             if item.volume_slide then
@@ -628,9 +628,9 @@ local function clear_cursor()
 end
 
 function love.keypressed(key)
-    if key == "escape" then
+--[[     if key == "escape" then
         toggle_screen()
-    end
+    end ]]
 end
 
 
